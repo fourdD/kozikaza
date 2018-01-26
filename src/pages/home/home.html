@@ -1,14 +1,46 @@
-<ion-header>
-  <ion-navbar>
-    <ion-title>
-      Ionic Blank
-    </ion-title>
-  </ion-navbar>
-</ion-header>
-
+<ion-toolbar no-border-top>
+    <ion-buttons start>
+      <button ion-button icon-only>
+        <ion-icon ios="ios-close" md="md-close"></ion-icon>
+      </button>
+    </ion-buttons>
+    <ion-title>PUBLIER</ion-title>
+    <ion-buttons end>
+      <button ion-button icon-only>
+        <ion-icon name="more"></ion-icon>
+      </button>
+      <button ion-button icon-only>
+        <ion-icon name="analytics"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-toolbar>
 <ion-content padding>
-  The world is your oyster.
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
-  </p>
+  <ion-slides pager="true">
+    <ion-slide>
+      <img src='../../assets/imgs/wallhaven-618655.jpg' class="image-slide"/>
+      <div class="info-wrap">
+        <p>PHOTOS PROJET</p>
+        <P>racontez i'histoire de voitre projet !</P>
+      </div>
+    </ion-slide>
+    <ion-slide>
+      <img src='../../assets/imgs/wallhaven-618817.jpg' class="image-slide"/>
+    </ion-slide>
+    <ion-slide>
+      <img src='../../assets/imgs/wallhaven-619176.jpg' class="image-slide"/>
+    </ion-slide>
+  </ion-slides>
+  <div class="wrap-swiper-cycle-icon">
+    <div class="cycle-wrap-icon-active">
+      <ion-icon name="reverse-camera" class="icon-in-cycle-active"></ion-icon>
+    </div>
+    <div class="cycle-wrap-icon">
+      <ion-icon name="calendar"  class="icon-in-cycle"></ion-icon>
+    </div>
+    <div class="cycle-wrap-icon-a">
+      <ion-icon name="stats"  class="icon-in-cycle"></ion-icon>
+    </div>
+  </div>
+
+  <button ion-button class="btn-start">COMMENCER</button>
 </ion-content>
