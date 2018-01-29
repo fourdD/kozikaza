@@ -15,7 +15,7 @@
     </ion-buttons>
   </ion-toolbar>
 <ion-content padding>
-  <ion-slides pager="true">
+  <ion-slides pager="true" (ionSlideDidChange)="slideChanged()">
     <ion-slide>
       <img src='../../assets/imgs/wallhaven-618655.jpg' class="image-slide"/>
       <div class="info-wrap">
@@ -50,5 +50,5 @@
     </div>
   </div>
 
-  <button ion-button class="btn-start">COMMENCER</button>
+  <button ion-button class="btn-start" (click)="postPage();">COMMENCER</button>
 </ion-content>

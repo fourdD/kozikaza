@@ -1,0 +1,52 @@
+page-gille {
+  .scroll-content {
+    padding: 0 !important;
+  }
+  .grid {
+    padding: 0;
+  }
+  .row {
+    padding-top: 20px;
+  }
+  ion-icon {
+    font-size: 40px;
+  }
+  .col {
+    padding: 30px 15px;
+    border: 1px solid #aaa;
+    background-color: #fff;
+    &:active,
+    &:hover,
+    &:focus,
+    &.active {
+      background-color: #eae8e8;
+    }
+
+    &:nth-child(2n) {
+      border-left: none;
+    }
+    &:nth-child(3n),
+    &:nth-child(2n+1),
+    &:nth-child(3n+1){
+      border-top: none;
+    }
+    &:first-child {
+      border: 1px solid #aaa;
+    }
+    h3 {
+      font-size: 16px;
+    }
+  }
+
+  table {
+    tr {
+      width: 100%;
+      display: flex;
+      align-items: stretch;
+    }
+    td {
+      width: 50%;
+      text-align: center;
+    }
+  }
+}
