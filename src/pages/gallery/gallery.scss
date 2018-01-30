@@ -16,6 +16,12 @@ page-gallery {
     position: relative;
     background-color: #EEEEEE;
     border: 2px solid #fff;
+    &.active {
+      .bor-ser,
+      .number {
+        display: block;
+      }
+    }
     .des-center {
       position: absolute;
       top: 50%;
@@ -26,6 +32,25 @@ page-gallery {
         margin-top: 10px;
         margin-bottom: 0;
       }
+    }
+    .bor-ser {
+      display: none;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: calc(100% - 0px);
+      height: calc(100% - 0px);
+      border: 5px solid rgba(51, 136, 76, 1);
+    }
+    .number {
+      display: none;
+      position: absolute;
+      top: 0;
+      right: 0;
+      font-size: 15px;
+      color: #fff;
+      padding: 2px 7px;
+      background-color: rgba(51, 136, 76, 1);
     }
   }
   .item-block {
