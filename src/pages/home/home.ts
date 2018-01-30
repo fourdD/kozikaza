@@ -1,5 +1,5 @@
 import { GillePage } from './../gille/gille';
-import { Component, ViewChild  } from '@angular/core';
+import { Component, ViewChild } from '@angular/core';
 import { NavController } from 'ionic-angular';
 import { Slides } from 'ionic-angular';
 
@@ -8,16 +8,13 @@ import { Slides } from 'ionic-angular';
   templateUrl: 'home.html'
 })
 export class HomePage {
-
+  
   @ViewChild(Slides) slides: Slides;
-
-  constructor(
-    public navCtrl: NavController
-  ) {}
+  
+  constructor(public navCtrl: NavController) {}
 
   slideChanged() {
     let currentIndex = this.slides.getActiveIndex();
-    console.log('Current index is', currentIndex);
   }
 
   postPage() {
