@@ -16,6 +16,10 @@ page-gallery {
     position: relative;
     background-color: #EEEEEE;
     border: 2px solid #fff;
+    height: 33.33333vw;
+    .image-slide {
+      height: 100%;
+    }
     &.active {
       .bor-ser,
       .number {
