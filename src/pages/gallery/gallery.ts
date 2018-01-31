@@ -14,7 +14,7 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
   templateUrl: 'gallery.html',
 })
 export class GalleryPage {
-  data = [
+  images = [
     {
       id: 1,
       img: 'assets/imgs/wallhaven-618655.jpg'
@@ -58,5 +58,7 @@ export class GalleryPage {
   ionViewDidLoad() {
     
   }
-
+  onChoose(id) {
+    console.log(id)
+  }
 }

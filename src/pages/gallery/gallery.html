@@ -40,33 +40,11 @@
             <h3>Photo De<br> Ma KAZA</h3>
           </div>
         </ion-col>
-        <ion-col col-4 text-center text-uppercase>
-            <img class="image-slide" src="../../assets/imgs/wallhaven-618655.jpg">
+        <ng-container *ngFor='let image of images'>
+          <ion-col col-4 text-center text-uppercase (click)='onChoose(image.id)'>
+              <img class="image-slide" src={{image.img}}>
           </ion-col>
-          <ion-col col-4 text-center text-uppercase>
-            <img class="image-slide" src="../../assets/imgs/wallhaven-618655.jpg">
-          </ion-col>
-          <ion-col col-4 text-center text-uppercase>
-            <img class="image-slide" src="../../assets/imgs/wallhaven-618655.jpg">
-          </ion-col>
-          <ion-col col-4 text-center text-uppercase>
-            <img class="image-slide" src="../../assets/imgs/wallhaven-618655.jpg">
-          </ion-col>
-          <ion-col col-4 text-center text-uppercase>
-            <img class="image-slide" src="../../assets/imgs/wallhaven-618655.jpg">
-          </ion-col>
-          <ion-col col-4 text-center text-uppercase>
-            <img class="image-slide" src="../../assets/imgs/wallhaven-618655.jpg">
-          </ion-col>
-          <ion-col col-4 text-center text-uppercase>
-            <img class="image-slide" src="../../assets/imgs/wallhaven-618655.jpg">
-          </ion-col>
-          <ion-col col-4 text-center text-uppercase>
-            <img class="image-slide" src="../../assets/imgs/wallhaven-618655.jpg">
-          </ion-col>
-          <ion-col col-4 text-center text-uppercase>
-            <img class="image-slide" src="../../assets/imgs/wallhaven-618655.jpg">
-          </ion-col>
+        </ng-container>
       </ion-row>
     </ion-grid>
 </ion-content>
