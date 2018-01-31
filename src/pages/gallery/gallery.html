@@ -27,29 +27,32 @@
       Tags
     </ion-item>
   </ion-navbar>
-    <ion-grid>
-      <ion-row>
-        <ion-col col-4 text-center text-uppercase>
-          <div class="des-center">
-            <ion-icon name="reverse-camera"></ion-icon>
-          </div>
+  <ion-grid>
+    <ion-row>
+      <ion-col col-4 text-center text-uppercase>
+        <div class="des-center">
+          <ion-icon name="reverse-camera"></ion-icon>
+        </div>
+      </ion-col>
+      <ion-col col-4 text-center text-uppercase>
+        <div class="des-center">
+          <ion-icon name="image"></ion-icon>
+          <h3>Photo De
+            <br> Ma KAZA</h3>
+        </div>
+      </ion-col>
+      <ng-container *ngFor='let image of images'>
+        <ion-col col-4 text-center text-uppercase (click)='onChoose(image.id)' class="active">
+          <img class="image-slide" src={{image.img}}>
+          <div class="bor-ser"></div>
+          <div class="number">1</div>
         </ion-col>
-        <ion-col col-4 text-center text-uppercase>
-          <div class="des-center">
-            <ion-icon name="image"></ion-icon>
-            <h3>Photo De<br> Ma KAZA</h3>
-          </div>
-        </ion-col>
-        <ng-container *ngFor='let image of images'>
-          <ion-col col-4 text-center text-uppercase (click)='onChoose(image.id)'>
-              <img class="image-slide" src={{image.img}}>
-          </ion-col>
-        </ng-container>
-      </ion-row>
-    </ion-grid>
+      </ng-container>
+    </ion-row>
+  </ion-grid>
 </ion-content>
 <ion-footer no-shadow>
   <ion-toolbar position="bottom" class="wrap-button-bottom">
-      <app-button class="btn-start">suivant</app-button>
+    <app-button class="btn-start">suivant</app-button>
   </ion-toolbar>
 </ion-footer>

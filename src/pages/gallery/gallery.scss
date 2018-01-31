@@ -1,99 +1,125 @@
 page-gallery {
-  .scroll-content {
-    padding: 0 !important;
-  }
-  .toolbar-md{
-    padding: 0px
-  }
-
-  .item-block {
-    width: calc(100%/3);
-    float: left;
-    text-align: center;
-    background-color: #EEEEEE;
-    padding: 10px;
-    position: relative;
-    &.active {
-      &:before {
-        content: '';
-        width: 70px;
-        height: 5px;
-        background-color: #88B04B;
+    .scroll-content {
+        padding: 0 !important;
+    }
+    .toolbar-md {
+        padding: 0px
+    }
+    .item-block {
+        width: calc(100%/3);
+        float: left;
+        text-align: center;
+        background-color: #EEEEEE;
+        padding: 10px;
+        position: relative;
+        &.active {
+            &:before {
+                content: '';
+                width: 70px;
+                height: 5px;
+                background-color: color($colors, colorgreen2);
+                position: absolute;
+                bottom: 0;
+            }
+            &:first-child {
+                text-align: left;
+                &:before {
+                    left: 10px;
+                    transform: translateX(0);
+                }
+            }
+            &:last-child {
+                text-align: right;
+                &:before {
+                    right: 10px;
+                    transform: translateX(0);
+                }
+            }
+            &:nth-child(2n) {
+                &:before {
+                    left: 50%;
+                    transform: translateX(-50%);
+                }
+            }
+        }
+        &:first-child {
+            text-align: left;
+        }
+        &:last-child {
+            text-align: right;
+        }
+        &.item {
+            .item-inner {
+                border-bottom: none;
+            }
+        }
+    }
+    .icon {
+        display: inline-block;
+        width: 24px;
+        font-size: 30px;
+        margin-right: 10px;
+        vertical-align: middle;
+    }
+    .label {
+        margin: 0;
+    }
+    [col-4] {
+        padding: 0px;
+        width: 33vw;
+        height: 33vw;
+        border: solid 1px color($colors, colorwhite);
+        background-color: #EEEEEE;
+    }
+    .col {
+      &.active {
+        .bor-ser,
+        .number {
+          display: block;
+        }
+      }
+    }
+    img {
+        height: 100%
+    }
+    .grid {
+        padding: 0px;
+        margin-top: 5px
+    }
+    .des-center {
+        background: color($colors, colorgray);
         position: absolute;
-        bottom: 0;
-      }
-      &:first-child {
-        text-align: left;
-        &:before {
-          left: 10px;
-          transform: translateX(0);
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        h3 {
+            font-size: 12px;
+            margin-top: 6px
         }
-      }
-      &:last-child {
-        text-align: right;
-        &:before {
-          right: 10px;
-          transform: translateX(0);
+        ion-icon {
+            margin-right: 0px;
         }
-      }
-      &:nth-child(2n) {
-        &:before {
-          left: 50%;
-          transform: translateX(-50%);
-        }
-      }
     }
-    &:first-child {
-      text-align: left;
+    .wrap-button-bottom {
+        text-align: center;
     }
-    &:last-child {
-      text-align: right;
+    .bor-ser {
+        display: none;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: calc(100% - 0px);
+        height: calc(100% - 0px);
+        border: 5px solid color($colors, colorgreen2);
     }
-    &.item {
-      .item-inner {
-        border-bottom: none;
-      }
+    .number {
+        display: none;
+        position: absolute;
+        top: 0;
+        right: 0;
+        font-size: 15px;
+        color: #fff;
+        padding: 2px 7px;
+        background-color: color($colors, colorgreen2);
     }
-  }
-  .icon {
-    display: inline-block;
-    width: 24px;
-    font-size: 30px;
-    margin-right: 10px;
-    vertical-align: middle;
-  }
-  .label {
-    margin: 0;
-  }
-  [col-4]{
-    padding: 0px;
-    width: 33vw;
-    height: 33vw;
-    border: solid 1px color($colors, colorwhite);
-    background-color: #EEEEEE;
-  }
-  img{
-    height: 100%
-  }
-  .grid{ 
-    padding: 0px;
-    margin-top: 5px
-  }
-  .des-center{
-    background: color($colors, colorgray);
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    h3 {
-      font-size: 12px;
-      margin-top: 6px
-    }
-    ion-icon {
-      margin-right: 0px;
-    }
-  }
-  .wrap-button-bottom{
-    text-align: center;
-  }
 }
