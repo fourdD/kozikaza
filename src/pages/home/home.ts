@@ -8,13 +8,28 @@ import { Slides } from 'ionic-angular';
   templateUrl: 'home.html'
 })
 export class HomePage {
-  
+
+  images = [
+    "wallhaven-613438_400x200.png",
+    "wallhaven-613438_400x200.png",
+    "wallhaven-613438_400x200.png",
+    "wallhaven-613438_400x200.png"
+  ];
+
+  // images = [
+  //   "camera",
+  //   "camera",
+  //   "camera",
+  //   "camera"
+  // ];
+
   @ViewChild(Slides) slides: Slides;
-  
+
   constructor(public navCtrl: NavController) {}
 
   slideChanged() {
     let currentIndex = this.slides.getActiveIndex();
+    console.log(currentIndex);
   }
 
   postPage() {
