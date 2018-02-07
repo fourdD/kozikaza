@@ -10,7 +10,6 @@ import { HomePage } from '../pages/home/home';
 import { GillePage } from '../pages/gille/gille';
 import { GalleryPage } from './../pages/gallery/gallery';
 
-
 @NgModule({
   declarations: [
     MyApp,
@@ -21,7 +20,7 @@ import { GalleryPage } from './../pages/gallery/gallery';
   ],
   imports: [
     BrowserModule,
-    IonicModule.forRoot(MyApp)
+    IonicModule.forRoot(MyApp),
   ],
   bootstrap: [IonicApp],
   entryComponents: [

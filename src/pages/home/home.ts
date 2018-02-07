@@ -14,7 +14,7 @@ export class HomePage {
   constructor(public navCtrl: NavController) {}
 
   slideChanged() {
-    let currentIndex = this.slides.getActiveIndex();
+    // let currentIndex = this.slides.getActiveIndex();
   }
 
   postPage() {

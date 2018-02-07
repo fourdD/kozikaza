@@ -51,14 +51,19 @@ export class GalleryPage {
       id: 9,
       img: 'assets/imgs/wallhaven-618655.jpg'
     }
-  ]
+  ];
+  imagesPicked = [];
+  id;
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 
   ionViewDidLoad() {
     
   }
-  onChoose(id) {
-    console.log(id)
+  onChoose(image) {
+    this.imagesPicked.push(image.id)
+    this.id = image.id
+    console.log(this.imagesPicked)
   }
+
 }

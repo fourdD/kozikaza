@@ -122,4 +122,26 @@ page-gallery {
         padding: 2px 7px;
         background-color: color($colors, colorgreen2);
     }
+    .fixed-content {
+        overflow-y: hidden
+    }
+    .unactibe {
+
+    }
+    .first{
+        width: 90px;
+        height: 90px;
+        background: gray;
+    }
+    .second{
+        width: 90px;
+        height: 90px;
+        border-radius: 50%; 
+        background: gray;
+    }
+    .third{
+        width: 190px;
+        height: 90px;
+        background: gray;
+    }
 }

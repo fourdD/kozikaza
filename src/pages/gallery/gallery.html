@@ -42,7 +42,13 @@
         </div>
       </ion-col>
       <ng-container *ngFor='let image of images'>
-        <ion-col col-4 text-center text-uppercase (click)='onChoose(image.id)' class="active">
+        <ion-col
+          col-4 text-center
+          text-uppercase
+          id={{image.id}}
+          (click)='onChoose(image)'
+          [ngClass]="{'active': id === image.id}"
+        >
           <img class="image-slide" src={{image.img}}>
           <div class="bor-ser"></div>
           <div class="number">1</div>
